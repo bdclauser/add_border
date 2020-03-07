@@ -11,4 +11,4 @@ for filename in os.listdir('.'):
     img = Image.open(filename)
     print('Adding border to %s...' % (filename))
     im = ImageOps.expand(img, border=2, fill='black')
-    im.size(os.path.join('withBorder', filename))
+    im.save(os.path.join('withBorder', filename))
