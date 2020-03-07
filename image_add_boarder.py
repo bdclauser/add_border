@@ -5,6 +5,7 @@ import os
 import sys
 from PIL import Image, ImageOps
 
+os.makedirs('withBorder', exist_ok=True)
 for filename in os.listdir('.'):
     if not (filename.endswith('.png') or filename.endswith('.jpg')):
         continue  # skip non-image files
