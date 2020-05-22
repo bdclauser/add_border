@@ -11,5 +11,6 @@ for filename in os.listdir('.'):
         continue  # skip non-image files
     img = Image.open(filename)
     print('Adding border to %s...' % (filename))
-    im = ImageOps.expand(img, border=2, fill='black')
-    im.save(os.path.join('withBorder', filename))
+    im = ImageOps.expand(img, border=3, fill='black')
+    im = im.convert("RGB")
+    im.save(os.path.join('withBorder', filename.replace("png", "jpg")))
