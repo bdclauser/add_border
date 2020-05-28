@@ -1,4 +1,4 @@
-#! /usr/bin/env python3
+#!/usr/bin/env python3
 # image_add_boarder.py - Automatically grabs all images in folder and adds a border around it
 
 import os
